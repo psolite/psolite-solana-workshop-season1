@@ -1,4 +1,4 @@
-## Welcome to PSOLITE SOLANA WORWSHOP
+## Welcome to PSOLITE SOLANA WORKSHOP
 
 This workshop focused on to start solana development using solana/web3.js Package.
 
@@ -37,7 +37,7 @@ Github: [`https://github.com/judeVector/solana-workshop-preview`](https://github
 
 ## SESSION 4
 
-How to Integrating Solana Program to the Frontend
+How to Integrate Solana Program to the Frontend
 
 Youtude Recording:  [`https://youtu.be/WE7JI7wk1Cw`](https://youtu.be/WE7JI7wk1Cw)
 Github: Branch - session4
