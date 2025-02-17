@@ -1,6 +1,6 @@
 "use client";
 
-import { CreateWallet } from "@/comp/createWallet";
+import { CreateWallet } from "@/comp/CreateWallet";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import bs58 from "bs58"

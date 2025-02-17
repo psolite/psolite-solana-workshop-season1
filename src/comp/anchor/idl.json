@@ -1,0 +1,216 @@
+{
+    "address": "FHMvSSY4Ne9j7Zgjcus5VBCtW2yykTQfnTXxiuVYbauX",
+    "metadata": {
+      "name": "onchain_blog",
+      "version": "0.1.0",
+      "spec": "0.1.0",
+      "description": "Created with Anchor"
+    },
+    "instructions": [
+      {
+        "name": "create_post",
+        "discriminator": [
+          123,
+          92,
+          184,
+          29,
+          231,
+          24,
+          15,
+          202
+        ],
+        "accounts": [
+          {
+            "name": "post",
+            "writable": true,
+            "pda": {
+              "seeds": [
+                {
+                  "kind": "const",
+                  "value": [
+                    112,
+                    115,
+                    111,
+                    108,
+                    105,
+                    116,
+                    101
+                  ]
+                },
+                {
+                  "kind": "account",
+                  "path": "author"
+                },
+                {
+                  "kind": "arg",
+                  "path": "timestamp"
+                }
+              ]
+            }
+          },
+          {
+            "name": "author",
+            "writable": true,
+            "signer": true
+          },
+          {
+            "name": "system_program",
+            "address": "11111111111111111111111111111111"
+          }
+        ],
+        "args": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "u64"
+          }
+        ]
+      },
+      {
+        "name": "delete_post",
+        "discriminator": [
+          208,
+          39,
+          67,
+          161,
+          55,
+          13,
+          153,
+          42
+        ],
+        "accounts": [
+          {
+            "name": "post",
+            "writable": true
+          },
+          {
+            "name": "author",
+            "signer": true,
+            "relations": [
+              "post"
+            ]
+          }
+        ],
+        "args": []
+      },
+      {
+        "name": "edit_post",
+        "discriminator": [
+          218,
+          25,
+          82,
+          105,
+          200,
+          189,
+          238,
+          75
+        ],
+        "accounts": [
+          {
+            "name": "post",
+            "writable": true
+          },
+          {
+            "name": "author",
+            "signer": true,
+            "relations": [
+              "post"
+            ]
+          }
+        ],
+        "args": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "content",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "toggle_publish",
+        "discriminator": [
+          115,
+          170,
+          172,
+          43,
+          214,
+          183,
+          220,
+          7
+        ],
+        "accounts": [
+          {
+            "name": "post",
+            "writable": true
+          },
+          {
+            "name": "author",
+            "signer": true,
+            "relations": [
+              "post"
+            ]
+          }
+        ],
+        "args": []
+      }
+    ],
+    "accounts": [
+      {
+        "name": "Post",
+        "discriminator": [
+          8,
+          147,
+          90,
+          186,
+          185,
+          56,
+          192,
+          150
+        ]
+      }
+    ],
+    "types": [
+      {
+        "name": "Post",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "author",
+              "type": "pubkey"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "name": "created_at",
+              "type": "i64"
+            },
+            {
+              "name": "updated_at",
+              "type": "i64"
+            },
+            {
+              "name": "is_published",
+              "type": "bool"
+            }
+          ]
+        }
+      }
+    ]
+  }
