@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Welcome to PSOLITE SOLANA WORWSHOP
 
-## Getting Started
+This workshop focused on to start solana development using solana/web3.js Package.
 
-First, run the development server:
+All you will need is JavaScript Knowledge and we used NextJS.
+Any Issues you can dm on X [`0xpsoliteSol`](https://x.com/0xpsoliteSol).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## SESSION 1
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We learnt how to set up a button that allows users to connect their wallet to our web app and how users can create a Solana wallet from our web app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Youtude Recording: [`https://www.youtube.com/watch?v=kFHTSdRAMAU`](https://www.youtube.com/watch?v=kFHTSdRAMAU)
+Github: Branch - session-1
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## SESSION 2
 
-## Learn More
+Setting your program to allow users to fetch balance and  send Solana or SPL token
 
-To learn more about Next.js, take a look at the following resources:
+Youtude Recording: [`https://www.youtube.com/watch?v=dXMN5QeY7UI`](https://www.youtube.com/watch?v=dXMN5QeY7UI)
+Github: Branch - class2
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SESSION 3
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+How to Mint an SPL on Solana
+- Creating a mint address
+- Creating a Token account
+- Minting Token (supply)
 
-## Deploy on Vercel
+YouTube recordings
+Part 1 - Creating a mint address : [`https://youtu.be/XVGld-2avps?si=orkFIb9X0LjnBNnh`](https://youtu.be/XVGld-2avps?si=orkFIb9X0LjnBNnh)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Part 2 - Creating a Token Account :  [`https://youtu.be/bgdbx9Dyq7k?si=IIC9AQDElWTaE1Wc`](https://youtu.be/bgdbx9Dyq7k?si=IIC9AQDElWTaE1Wc)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Part 3 - Minting Token (supply) :  [`https://youtu.be/xfWBRBxUPoY?si=LncsXi1yh8K2YDkN `](https://youtu.be/xfWBRBxUPoY?si=LncsXi1yh8K2YDkN )
+
+Github: [`https://github.com/judeVector/solana-workshop-preview`](https://github.com/judeVector/solana-workshop-preview)
+
+## SESSION 4
+
+How to Integrating Solana Program to the Frontend
+
+Youtude Recording:  [`https://youtu.be/WE7JI7wk1Cw`](https://youtu.be/WE7JI7wk1Cw)
+Github: Branch - session4
+
+Thanks to SuperTeamNG for the grant that made this happen.
